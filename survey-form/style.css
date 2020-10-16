@@ -1,0 +1,66 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+#bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: blur(10px);
+}
+.overlay {
+  background-color: rgba(250, 250, 250, 0.2);
+}
+#form-bg {
+  margin: 3rem 0px;
+  padding: 20px 50px;
+  background: linear-gradient(
+    45deg,
+    rgba(22, 160, 133, 1) 30%,
+    rgba(245, 209, 66, 1) 87%
+  );
+  border-radius: 18px;
+  backdrop-filter: blur(5px);
+}
+
+#title {
+  font-size: 2.1rem;
+}
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#description {
+  font-style: italic;
+  color: #f9f9f9;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 9px rgba(97, 97, 97, 0.93);
+}
+#line {
+  background-color: #f9f9f9;
+  height: 1.5px;
+  border-radius: 4px;
+}
+.statement-label {
+  margin-bottom: 6px;
+}
+.form-group {
+  padding-bottom: 8px;
+}
+#comment {
+  min-height: 100px;
+}
+#submit {
+  width: 100%;
+  border: #f9f9f9;
+  border-style: solid;
+  color: #f9f9f9;
+  margin-top: 6px;
+}
+#submit:hover {
+  background-color: #f9f9f9;
+  color: black;
+}

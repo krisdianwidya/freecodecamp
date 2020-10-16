@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About me</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <div class="about-content">
+            <img src="https://i.ibb.co/mDSJ6Pj/undraw-code-inspection-bdl7-1.png" alt="code">
+        </div>
+        <div class="about-content">
+            <h1>Hello,
+                <br>
+                i am <span>Kris</span></h1>
+        </div>
+        <div class="about-content">
+            <p>a junior <span>web developer</span> and <span>graphic designer</span></p>
+        </div>
+        <div class="about-content">
+            <img src="https://i.ibb.co/nwJFyHt/undraw-design-stats-ne2k-1.png" alt="design">
+        </div>
+    </section>
+
+    <h2 id="proj-section-name">These are some of my projects</h2>
+    <section id="projects">
+        <a class="project-tile" href="https://codepen.io/krisdianwidya/full/ZEOEWpV" target="_blank">
+            <img src="https://i.ibb.co/N38FSLq/tribute-page.png" alt="">
+            Tribute Page
+        </a>
+        <a class="project-tile" href="https://codepen.io/krisdianwidya/full/ZEObPLq" target="_blank">
+            <img src="https://i.ibb.co/pvjV343/documentation-page.png" alt="">
+            Documentation Page
+        </a>
+        <a class="project-tile" href="https://codepen.io/krisdianwidya/full/xxObowG" target="_blank">
+            <img src="https://i.ibb.co/fN1bkLY/survey-form.png" alt="">
+            Survey Form
+        </a>
+        <a class="project-tile" href="https://codepen.io/krisdianwidya/full/abZOxRV" target="_blank">
+            <img src="https://i.ibb.co/SRhfQPV/landing-page.png" alt="">
+            Landing Page
+        </a>
+    </section>
+
+    <h2>Get in touch with me</h2>
+    <section id="contact">
+        <div class="contact-content">
+            <a id="profile-link" href="https://github.com/krisdianwidya/" target="_blank"><i
+                    class="fab fa-github"></i>Github</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+        </div>
+        <div class="contact-content line">
+        </div>
+        <div class="contact-content">
+            <form>
+                <label class="statement-label" for="name" id="name-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required />
+
+                <label class="statement-label" for="email" id="email-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email"
+                    required />
+
+                <p class="statement-label">Tell me what you need</p>
+                <textarea class="form-control" name="comment" id="comment" placeholder="Enter your idea..."></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>This portolio was created for freecodecamp "Responsive Web Design Project"</p>
+        <p>&copy; Copyright 2020</p>
+    </footer>
+</body>
+
+</html>

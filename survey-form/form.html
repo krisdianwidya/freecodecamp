@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <img
+      id="bg-img"
+      src="https://images.unsplash.com/photo-1550087560-0d40289f48ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+      alt="background-image"
+    />
+    <div class="overlay">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-7" id="form-bg">
+            <header>
+              <h1 id="title">Market Commerce Survey Form</h1>
+              <p id="description">
+                Thank you for taking the time to help us improve our service
+              </p>
+              <div id="line"></div>
+            </header>
+            <form id="survey-form">
+              <div class="row">
+                <div class="form-group col">
+                  <label class="statement-label" for="name" id="name-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <label class="statement-label" for="email" id="email-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="statement-label" for="number" id="number-label"
+                  >Age</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  name="number"
+                  id="number"
+                  min="17"
+                  max="100"
+                  placeholder="Age"
+                />
+              </div>
+
+              <div class="form-group">
+                <p class="statement-label">
+                  Where is the service area you live in?
+                </p>
+                <select name="area" class="form-control" id="dropdown">
+                  <option disabled selected>Select area</option>
+                  <option value="area-a">Area A</option>
+                  <option value="area-b">Area B</option>
+                  <option value="area-c">Area C</option>
+                  <option value="area-c">Area D</option>
+                  <option value="area-e">Area E</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p class="statement-label">
+                  Would you recommend Market Commerce to a friend?
+                </p>
+
+                <div class="form-check">
+                  <label class="form-check-label"
+                    ><input
+                      class="form-check-input"
+                      type="radio"
+                      name="recommend"
+                      value="absolutely"
+                    />Absolutely</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label"
+                    ><input
+                      class="form-check-input"
+                      type="radio"
+                      name="recommend"
+                      value="maybe"
+                    />Maybe</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label"
+                    ><input
+                      class="form-check-input"
+                      type="radio"
+                      name="recommend"
+                      value="not-sure"
+                    />Not sure</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <p class="statement-label">
+                  What would you like to buy usually?
+                </p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="prefer-buy"
+                      value="groceries"
+                    />Groceries</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="prefer-buy"
+                      value="fruit"
+                    />
+                    Fruit</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="prefer-buy"
+                      value="vegetable"
+                    />
+                    Vegetable</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="prefer-buy"
+                      value="herb-spice"
+                    />
+                    Herb & Spice</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="prefer-buy"
+                      value="meat-eggs"
+                    />
+                    Meat & Eggs</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <p class="statement-label">Any comments and suggestions</p>
+                <textarea
+                  class="form-control"
+                  name="comment"
+                  id="comment"
+                  placeholder="Enter your opinion..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn" id="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

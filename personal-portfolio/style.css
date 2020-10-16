@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* base style */
+body {
+  background-color: #fbf9fa;
+  color: #2b2024;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* nav style */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fbf9fa;
+}
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav-list li a {
+  font-weight: 200;
+  font-size: 20px;
+  color: #fd0054;
+  padding: 3px 20px;
+  margin: 0 20px;
+  border-radius: 25px;
+  transition: color 300ms ease, background-color 800ms ease;
+}
+.nav-list li a:hover {
+  border-radius: 25px;
+  background-color: #fd0054;
+  color: #fbf9fa;
+  text-shadow: 4px 4px 11px rgba(251, 249, 250, 0.82);
+}
+h1 span {
+  color: #fd0054;
+  text-decoration: underline;
+}
+
+/* welcome section */
+
+#welcome-section,
+#projects {
+  height: 100vh;
+  margin: 100px 12vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2.6vw;
+  row-gap: 5vw;
+}
+.about-content {
+  margin: 5px 10px;
+  align-self: center;
+}
+.about-content h1 {
+  font-size: 6vw;
+  line-height: 6.4vw;
+}
+.about-content p {
+  font-size: 3.5vw;
+  text-align: right;
+}
+.about-content:nth-child(3) {
+  align-self: flex-start;
+}
+
+/* project section */
+h2 {
+  text-align: center;
+  font-size: 3.7vw;
+}
+#proj-section-name {
+  margin-top: 20vw;
+}
+#projects a {
+  text-align: center;
+  background-color: #dcdbdb;
+  color: #2b2024;
+  font-size: 1.7vw;
+  padding: 16px 14px;
+  border-radius: 12px;
+  transition: color 300ms ease, box-shadow 500ms ease;
+}
+#projects a:hover {
+  box-shadow: 0px 0px 13px 4px rgba(189, 188, 189, 1);
+  color: #fd0054;
+}
+
+/* contact section */
+#contact {
+  margin: 30px 12vw;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 3vw;
+}
+.contact-content:nth-child(1) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-size: 1.8vw;
+}
+.contact-content a {
+  color: #2b2024;
+  padding: 5px 0;
+  transition: color 700ms ease;
+}
+.contact-content a:hover {
+  color: #fd0054;
+}
+.contact-content a i {
+  padding-right: 6px;
+}
+.line {
+  width: 2px;
+  background-color: #fd0054;
+  border-radius: 4px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+}
+.statement-label {
+  margin-bottom: 3px;
+}
+.form-control {
+  height: 35px;
+  margin-bottom: 15px;
+  border: 1px solid #2b2024;
+  border-radius: 2px;
+  transition: border 400ms ease;
+}
+.form-control:focus {
+  outline-style: none;
+  border: 2px solid #fd0054;
+}
+#comment {
+  min-height: 70px;
+  max-width: 100%;
+}
+form button {
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fd0054;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 600ms ease;
+}
+form button:hover {
+  background-color: #a80038;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #fd0054;
+}
+footer p {
+  padding: 15px 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+  #welcome-section,
+  #projects {
+    margin: 120px 12vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    column-gap: 0.7w;
+    row-gap: 5vw;
+  }
+  .about-content p {
+    text-align: left;
+  }
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+  .line {
+    height: 2px;
+    width: 100%;
+    background-color: #fd0054;
+    border-radius: 4px;
+  }
+  .contact-content {
+    margin: 8px 0;
+  }
+  .contact-content:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-size: 3vw;
+    z-index: -1;
+  }
+  footer {
+    flex-direction: column;
+  }
+}

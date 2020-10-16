@@ -1,0 +1,177 @@
+* {
+  display: inline-flexbox;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+a.nav-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1a1c20;
+  transition: color 400ms ease;
+}
+a:hover {
+  color: #f0a500;
+}
+#header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+#nav-bar > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-bar > ul > li {
+  margin: 0px 30px;
+  list-style: none;
+}
+#logo {
+  flex-grow: 2;
+}
+#nav-bar {
+  flex-grow: 10;
+}
+#header-img {
+  max-width: 15rem;
+  height: auto;
+}
+.product-feature {
+  margin: 3rem 8rem;
+  display: flex;
+  align-items: center;
+}
+.product-feature:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.product-feature > img {
+  position: relative;
+  max-width: 55%;
+  height: auto;
+  margin: 0;
+  flex-grow: 7;
+}
+.feature-desc {
+  position: relative;
+  flex-grow: 3;
+  padding: 0 70px;
+  color: #cf7500;
+}
+#real-test {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+#pricing {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0rem 8rem;
+}
+.price-card {
+  text-align: center;
+  background-color: #d6d6d6;
+  box-shadow: 11px 16px 21px -15px rgba(0, 0, 0, 0.78);
+  margin: 0.25rem 2rem;
+  padding-bottom: 10px;
+}
+.card-title {
+  font-size: 20px;
+  border-bottom: 1px solid #f0a500;
+  align-items: center;
+}
+.card-desc {
+  padding: 0 30px;
+  font-style: italic;
+}
+.btn {
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: #f0a500;
+  transition: background-color 350ms ease;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color: #d29000;
+}
+#email-newsletter {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+#email-newsletter > h3 {
+  color: #cf7500;
+}
+#email {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #f0a500;
+}
+#email:focus {
+  outline-style: none;
+}
+#submit {
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0a500;
+  transition: background-color 350ms ease;
+  color: #ffffff;
+}
+#submit:hover {
+  background-color: #d29000;
+}
+footer {
+  border-top: 1px solid #f0a500;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 10px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1a1c20;
+  transition: color 400ms ease;
+  margin: 0 5px;
+}
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  #header,
+  #nav-bar > ul,
+  #pricing,
+  .product-feature {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo,
+  #navbar {
+    flex-grow: 1;
+  }
+  .product-feature {
+  }
+}
